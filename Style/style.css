@@ -23,6 +23,11 @@ nav {
     padding: 0;
 }
 
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
 .sesion {
     width: 97%;
     display: flex;
@@ -178,7 +183,7 @@ a {
     height: 50%;
 }
 
-/*Seccion Destacado*/
+
 .seccionDestacados {
     width: 100%;
     margin: 0 auto;
@@ -221,7 +226,7 @@ a {
     font-weight: 800;
 }
 
-/*Parilla para 6 imagenes*/
+
 .imagenes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -232,11 +237,11 @@ a {
 .imagenes2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px;
     margin-bottom: 30px;
 }
 
-/*Caracteristicas de las imagenes de la 2ª parrila*/
+
 .contenedor {
     margin: 0 auto;
     overflow: hidden;
@@ -245,6 +250,9 @@ a {
     position: relative;
     display: inline-block;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    border: 1px solid #fcfcfc;
+    background-image: linear-gradient(to bottom,  #9f9f9f,  #ffffff);
 }
 
 .contenedor:hover {
@@ -264,7 +272,7 @@ a {
     position: relative;
     display: inline-block;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
+    border-radius: 7px;
 }
 
 
@@ -300,12 +308,12 @@ a {
 }
 
 .imagen-parrilla img:hover {
-    transform: scale(1.8);
+    transform: scale(1.3);
     transition: 2.5s;
 }
 
 .imagen-parrilla2 img:hover {
-    transform: scale(1.8);
+    transform: scale(1.3);
     transition: 2.5s;
 }
 
@@ -374,4 +382,18 @@ a {
 #precio {
     color: white;
     margin-top: 0;
+}
+
+.gif-fijo {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* Para mantener la proporción del GIF */
+    z-index: -1; /* Asegura que esté por encima del resto del contenido */
+}
+.gif-fijo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Para asegurarse de que el GIF cubra completamente el contenedor */
 }
